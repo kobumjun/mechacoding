@@ -2,6 +2,7 @@ const siteHeader = document.querySelector("[data-site-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const nav = document.querySelector("[data-nav]");
 const navLinks = document.querySelectorAll(".nav-link");
+const navAllLinks = document.querySelectorAll("[data-nav] a");
 const revealTargets = document.querySelectorAll(".fade-in");
 const heroRevealTargets = document.querySelectorAll(".hero-reveal");
 const rootStyle = window.getComputedStyle(document.documentElement);
@@ -37,6 +38,12 @@ if (menuToggle && nav) {
   });
 
   navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth < 768) closeMenu();
+    });
+  });
+
+  navAllLinks.forEach((link) => {
     link.addEventListener("click", () => {
       if (window.innerWidth < 768) closeMenu();
     });

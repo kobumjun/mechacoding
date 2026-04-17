@@ -16,9 +16,11 @@
   --text-disabled: #48484D;
 
   /* Accent */
-  --accent: #FF4D1C;
-  --accent-hover: #FF6B3D;
-  --accent-muted: rgba(255, 77, 28, 0.12);
+  --accent: #FFFFFF;
+  --accent-hover: #E0E0E0;
+  --accent-muted: rgba(255, 255, 255, 0.12);
+  --cta-primary: #FFFFFF;
+  --cta-hover: #E0E0E0;
 
   /* Semantic */
   --success: #4ADE80;

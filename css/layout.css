@@ -78,6 +78,10 @@
   display: none;
 }
 
+.nav-cta-item {
+  margin-top: var(--space-4);
+}
+
 .menu-toggle {
   border: var(--line-thin) solid var(--border-default);
   background: var(--bg-subtle);
@@ -114,6 +118,35 @@
 
 .menu-toggle-line::after {
   top: var(--menu-line-offset);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-line {
+  background: transparent;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-line::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-line::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+  .renewal-v2 .header-inner {
+    flex-direction: row-reverse;
+  }
+
+  .renewal-v2 .brand {
+    text-align: right;
+  }
+
+  .renewal-v2 .header-actions {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-main {
@@ -172,6 +205,10 @@
 
   .nav-link {
     font-size: var(--text-sm);
+  }
+
+  .nav-cta-item {
+    display: none;
   }
 
   .menu-toggle {
