@@ -134,18 +134,9 @@
   transform: rotate(-45deg);
 }
 
-@media (max-width: 767px) {
-  .renewal-v2 .header-inner {
-    flex-direction: row-reverse;
-  }
-
-  .renewal-v2 .brand {
-    text-align: right;
-  }
-
-  .renewal-v2 .header-actions {
-    display: flex;
-    align-items: center;
+@media (max-width: 768px) {
+  .site-main > .section:first-child {
+    padding-top: var(--space-8);
   }
 }
 
