@@ -1,0 +1,2 @@
+- mecha-logo-wordmark.svg (가로형, 4:1 권장) - 헤더/푸터 로고 워드마크
+- mecha-logo-mark.svg (정사각형, 1:1 권장) - 파비콘 및 심볼용 로고 마크

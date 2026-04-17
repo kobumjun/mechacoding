@@ -1,0 +1,2 @@
+- director-profile.jpg (3:4, 1200x1600 권장) - 변경빈 대표원장 메인 프로필 이미지
+- director-portrait-square.jpg (1:1, 1200x1200 권장) - 서브 프로필 또는 카드형 이미지

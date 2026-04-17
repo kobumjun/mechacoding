@@ -1,0 +1,4 @@
+- program-foundation.jpg (4:5, 1200x1500 권장) - Foundation 프로그램 대표 이미지
+- program-collaborative.jpg (4:5, 1200x1500 권장) - Collaborative Project 프로그램 대표 이미지
+- program-elite.jpg (4:5, 1200x1500 권장) - Elite Competition 프로그램 대표 이미지
+- program-software.jpg (4:5, 1200x1500 권장) - Software Advanced Track 대표 이미지

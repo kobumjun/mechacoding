@@ -1,0 +1,4 @@
+- geumgok-map.jpg (3:2, 1500x1000 권장) - 금곡캠퍼스 지도 또는 주변 안내 이미지
+- gwanggyo-map.jpg (3:2, 1500x1000 권장) - 광교캠퍼스 지도 또는 주변 안내 이미지
+- contact-map.jpg (3:2, 1500x1000 권장) - Contact 페이지 Open Graph 공유 이미지
+- competition-gallery-01.jpg (3:2, 1500x1000 권장) - 대회/활동 갤러리 이미지
