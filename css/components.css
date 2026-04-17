@@ -317,6 +317,22 @@
 }
 
 @media (max-width: 768px) {
+  .site-main > .hero-split.section:first-child {
+    padding-top: var(--space-2);
+  }
+
+  .hero-split {
+    padding-top: 0;
+  }
+
+  .hero-media-wrap {
+    min-height: 40vh;
+  }
+
+  .hero-copy {
+    margin-top: var(--space-6);
+  }
+
   .mobile-only {
     display: inline;
   }
