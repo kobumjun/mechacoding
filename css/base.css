@@ -14,8 +14,8 @@ body {
   font-size: var(--text-body);
   line-height: 1.65;
   letter-spacing: -0.01em;
-  color: var(--text-primary);
-  background: var(--bg-base);
+  color: var(--text-content-primary);
+  background: var(--bg-content);
   text-rendering: optimizeLegibility;
 }
 
@@ -40,9 +40,10 @@ textarea {
 
 input,
 textarea {
-  border: var(--line-thin) solid var(--border-default);
+  border: var(--line-thin) solid var(--border-content);
   border-radius: var(--radius-sm);
-  background: var(--bg-subtle);
+  background: var(--bg-content);
+  color: var(--text-content-primary);
   padding: var(--space-4);
 }
 
@@ -52,7 +53,7 @@ textarea {
 }
 
 :focus-visible {
-  outline: var(--space-1) solid var(--accent);
+  outline: var(--space-1) solid var(--text-content-primary);
   outline-offset: var(--space-1);
 }
 
@@ -63,7 +64,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  color: var(--text-primary);
+  color: var(--text-content-primary);
   letter-spacing: -0.03em;
 }
 
@@ -84,7 +85,7 @@ h3 {
 
 p {
   margin: 0;
-  color: var(--text-secondary);
+  color: var(--text-content-secondary);
 }
 
 ul {
@@ -118,11 +119,11 @@ ul {
   font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--text-tertiary);
+  color: var(--text-content-secondary);
 }
 
 .text-accent {
-  color: var(--accent);
+  color: var(--text-content-primary);
 }
 
 .fade-in {
