@@ -13,7 +13,7 @@
       property="og:description"
       content="로보틱스와 소프트웨어를 연결한 결과 중심 교육. Foundation부터 Elite Competition까지."
     />
-    <meta property="og:image" content="./images/hero/hero-main.jpg" />
+    <meta property="og:image" content="./images/hero/hero-slide-01.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,9 +34,8 @@
   <body class="renewal-v2">
     <header class="site-header" data-site-header>
       <div class="container header-inner">
-        <a href="./index.html" class="brand" aria-label="메카코딩학원 홈">
-          <span class="brand-main">MECHA CODING</span>
-          <span class="brand-sub">ROBOTICS ACADEMY</span>
+        <a href="./index.html" class="logo" aria-label="메카코딩학원 홈">
+          <img src="./images/logo/mecha-logo-wordmark.png" alt="MechaCoding Robotics Academy" class="logo-img" />
         </a>
         <div class="header-actions">
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
@@ -44,241 +43,89 @@
             <span class="menu-toggle-line" aria-hidden="true"></span>
           </button>
           <nav id="site-nav" class="nav" data-nav>
+            <button type="button" class="nav-close" aria-label="메뉴 닫기" data-nav-close>
+              <span class="nav-close-icon" aria-hidden="true"></span>
+            </button>
             <ul class="nav-list">
               <li><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
               <li><a class="nav-link" href="./programs.html">Programs</a></li>
               <li><a class="nav-link" href="./instructor.html">Instructor</a></li>
               <li><a class="nav-link" href="./contact.html">Contact</a></li>
-              <li class="nav-cta-item"><a class="btn btn-primary" href="./contact.html">상담 문의</a></li>
             </ul>
           </nav>
-          <a class="btn btn-primary header-cta" href="./contact.html">상담 문의</a>
         </div>
       </div>
     </header>
 
     <main class="site-main">
-      <section class="section hero-split">
-        <div class="hero-media-wrap fade-in">
-          <!-- 필요 이미지: hero-main.jpg, 권장 비율 16:10, 설명: 메인 히어로 대회 수상 사진 -->
-          <img class="hero-image" src="./images/hero/hero-main.jpg" alt="메카코딩학원 학생들의 로보틱스 대회 수상 장면" loading="eager" />
+      <section class="section hero-carousel" data-hero-carousel>
+        <div class="hero-carousel-slides" aria-hidden="true">
+          <div class="hero-carousel-slide is-active" data-slide="0">
+            <!-- 필요 이미지: hero-slide-01.jpg, 16:9 권장, 슬라이드 1번 배경 -->
+            <img
+              class="hero-carousel-img"
+              src="./images/hero/hero-slide-01.jpg"
+              alt=""
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="hero-carousel-slide" data-slide="1">
+            <!-- 슬라이드 2: programs 페이지 협업 프로젝트 이미지 -->
+            <img
+              class="hero-carousel-img"
+              src="./images/programs/program-collaborative.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="hero-carousel-slide" data-slide="2">
+            <!-- 슬라이드 3: programs 페이지 Foundation 이미지 -->
+            <img class="hero-carousel-img" src="./images/programs/program-foundation.jpg" alt="" loading="lazy" />
+          </div>
         </div>
-        <div class="container hero-copy">
-          <p class="text-label hero-reveal">MECHA CODING ACADEMY</p>
-          <h1 class="text-hero hero-reveal">
-            로보틱스와<br class="mobile-only" />
-            소프트웨어,<br />
-            결과로 이어지는 <em class="text-display hero-emphasis">교육</em>
-          </h1>
-          <p class="hero-reveal">
-            메카코딩학원은 로보틱스와 소프트웨어를 기반으로, 문제 해결 능력과 공학적 사고를 키우는 프로젝트형 교육을 제공합니다.
+        <div class="hero-carousel-scrim" aria-hidden="true"></div>
+        <div class="hero-carousel-inner container">
+          <p class="hero-carousel-kicker">COMPETITION · PORTFOLIO · ADMISSIONS</p>
+          <div class="hero-carousel-panels">
+            <div class="hero-carousel-panel is-active" data-panel="0">
+              <h1 class="hero-carousel-headline">
+                도전하고,<br />
+                앞서가라
+              </h1>
+            </div>
+            <div class="hero-carousel-panel" data-panel="1">
+              <h1 class="hero-carousel-headline">
+                로보틱스와 소프트웨어,<br />
+                결과로 이어지는 교육
+              </h1>
+            </div>
+            <div class="hero-carousel-panel" data-panel="2">
+              <h1 class="hero-carousel-headline">
+                세계 무대를 향한<br />
+                첫 번째 발걸음
+              </h1>
+            </div>
+          </div>
+          <p class="hero-carousel-sub">대회 트로피, 포트폴리오, 입시 결과 — 모두 여기서 시작됩니다.</p>
+          <a class="btn-hero-outline" href="./programs.html">VIEW COURSES</a>
+        </div>
+        <div class="hero-carousel-dots" role="tablist" aria-label="히어로 슬라이드">
+          <button type="button" class="hero-carousel-dot is-active" data-go-to="0" aria-label="슬라이드 1" role="tab" aria-selected="true"></button>
+          <button type="button" class="hero-carousel-dot" data-go-to="1" aria-label="슬라이드 2" role="tab" aria-selected="false"></button>
+          <button type="button" class="hero-carousel-dot" data-go-to="2" aria-label="슬라이드 3" role="tab" aria-selected="false"></button>
+        </div>
+      </section>
+
+      <section class="section home-welcome">
+        <div class="container home-welcome-inner">
+          <h2 class="home-welcome-title">메카코딩학원에 오신 것을 환영합니다</h2>
+          <p class="home-welcome-sub">
+            로보틱스와 소프트웨어를 기반으로, 문제 해결 능력과 공학적 사고를 키우는 프로젝트형 교육을 제공합니다.
           </p>
-          <div class="hero-actions hero-reveal">
-            <a class="btn btn-primary" href="./contact.html">상담 문의</a>
-            <a class="btn btn-secondary" href="./programs.html">프로그램 보기</a>
-          </div>
-        </div>
-        <div class="container">
-          <div class="hero-stats hero-reveal">
-            <article class="stat-item">
-              <strong>VEX Korea Champion 지도</strong>
-              <span class="muted">대회 전략 설계부터 현장 코칭까지 통합 지원</span>
-            </article>
-            <article class="stat-item">
-              <strong>World Championship 멘토링</strong>
-              <span class="muted">국제 대회 기준의 프로젝트 완성도 트레이닝</span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt">
-        <div class="container">
-          <div class="two-col fade-in">
-            <div>
-              <p class="text-label">ABOUT</p>
-              <h2>코딩 수업을 넘어, 결과를 설계하는 교육기관</h2>
-            </div>
-            <div>
-              <p>
-                메카코딩학원은 학생이 문제를 정의하고, 기술로 해결하며, 결과를 설명하는 힘을 갖추도록 교육합니다. 단순한 기능 구현이 아니라
-                전략적 사고와 실행력을 동시에 길러냅니다.
-              </p>
-              <p style="margin-top: var(--space-4)">
-                로보틱스와 소프트웨어를 분리하지 않고 하나의 프로젝트 흐름으로 통합해, 실제 경쟁과 진학 환경에서 통하는 포트폴리오 중심의
-                학습 경험을 제공합니다.
-              </p>
-            </div>
-          </div>
-          <div class="pillar-list fade-in">
-            <article class="pillar">
-              <p class="program-number">01</p>
-              <h3>Problem Framing</h3>
-              <p>좋은 문제를 정의하는 순간부터 결과는 설계됩니다.</p>
-            </article>
-            <article class="pillar">
-              <p class="program-number">02</p>
-              <h3>Build &amp; Iterate</h3>
-              <p>설계-구현-검증-개선을 반복하며 완성도를 높입니다.</p>
-            </article>
-            <article class="pillar">
-              <p class="program-number">03</p>
-              <h3>Outcome Delivery</h3>
-              <p>결과물을 설명 가능한 언어로 구조화해 경쟁력을 만듭니다.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-header fade-in">
-            <p class="text-label">METHOD</p>
-            <h2>통합 학습 방식</h2>
-          </div>
-          <div class="icon-points fade-in">
-            <article class="icon-point">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="currentColor" />
-                <path d="M7 9h10M7 12h10M7 15h6" stroke="currentColor" />
-              </svg>
-              <h3>로보틱스 + 소프트웨어 통합</h3>
-              <p>하드웨어와 코드의 상호작용을 하나의 사고 체계로 익힙니다.</p>
-            </article>
-            <article class="icon-point">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" />
-                <circle cx="18" cy="18" r="2.5" stroke="currentColor" />
-              </svg>
-              <h3>설계→구현→테스트→개선</h3>
-              <p>엔지니어링 프로세스를 반복하며 실전 대응력을 강화합니다.</p>
-            </article>
-            <article class="icon-point">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M5 19V9m7 10V5m7 14v-7" stroke="currentColor" />
-                <path d="M3 19h18" stroke="currentColor" />
-              </svg>
-              <h3>프로젝트 기반 결과물 중심</h3>
-              <p>완성 결과물과 설명 역량까지 포함한 평가 가능한 학습을 진행합니다.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt">
-        <div class="container">
-          <div class="section-header fade-in">
-            <p class="text-label">PROGRAMS PREVIEW</p>
-            <h2>핵심 프로그램</h2>
-          </div>
-          <div class="program-grid fade-in">
-            <article class="program-card">
-              <!-- 필요 이미지: program-foundation.jpg, 권장 비율 4:5, 설명: Foundation 수업 장면 -->
-              <img class="image-4-5" src="./images/programs/program-foundation.jpg" alt="Foundation 트랙 수업 이미지" loading="lazy" />
-              <div class="program-card-body">
-                <p class="program-number">01</p>
-                <h3>Foundation | 기초 설계 트랙</h3>
-                <p>코딩과 로보틱스의 핵심 원리를 체계적으로 익히는 시작 단계.</p>
-                <a class="inline-link" href="./programs.html">자세히 보기</a>
-              </div>
-            </article>
-            <article class="program-card">
-              <!-- 필요 이미지: program-collaborative.jpg, 권장 비율 4:5, 설명: 팀 프로젝트 협업 장면 -->
-              <img class="image-4-5" src="./images/programs/program-collaborative.jpg" alt="Collaborative Project 트랙 팀 프로젝트 이미지" loading="lazy" />
-              <div class="program-card-body">
-                <p class="program-number">02</p>
-                <h3>Collaborative Project | 협업 프로젝트 트랙</h3>
-                <p>실제 문제를 팀 단위로 해결하며 협업과 커뮤니케이션을 강화합니다.</p>
-                <a class="inline-link" href="./programs.html">자세히 보기</a>
-              </div>
-            </article>
-            <article class="program-card">
-              <!-- 필요 이미지: program-elite.jpg, 권장 비율 4:5, 설명: 대회 준비 및 코칭 장면 -->
-              <img class="image-4-5" src="./images/programs/program-elite.jpg" alt="Elite Competition 트랙 대회 준비 이미지" loading="lazy" />
-              <div class="program-card-body">
-                <p class="program-number">03</p>
-                <h3>Elite Competition | 대회 집중 트랙</h3>
-                <p>국내외 대회를 목표로 전략 설계와 고난도 실전 훈련을 진행합니다.</p>
-                <a class="inline-link" href="./programs.html">자세히 보기</a>
-              </div>
-            </article>
-            <article class="program-card">
-              <!-- 필요 이미지: program-software.jpg, 권장 비율 4:5, 설명: 고급 소프트웨어 구현 장면 -->
-              <img class="image-4-5" src="./images/programs/program-software.jpg" alt="Software Advanced Track 고급 소프트웨어 개발 이미지" loading="lazy" />
-              <div class="program-card-body">
-                <p class="program-number">04</p>
-                <h3>Software Advanced Track | 심화 소프트웨어 트랙</h3>
-                <p>알고리즘과 아키텍처를 적용해 확장 가능한 소프트웨어 역량을 구축합니다.</p>
-                <a class="inline-link" href="./programs.html">자세히 보기</a>
-              </div>
-            </article>
-          </div>
-          <div class="fade-in" style="margin-top: var(--space-12)">
-            <a class="inline-link" href="./programs.html">전체 프로그램 보기</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container two-col director-spotlight">
-          <div class="director-preview-photo fade-in">
-            <!-- 필요 이미지: director-profile.jpg, 권장 비율 3:4, 설명: 원장 프로필 이미지 -->
-            <img src="./images/instructor/director-profile.jpg" alt="메카코딩학원 변경빈 대표원장 프로필" loading="lazy" />
-          </div>
-          <div class="fade-in">
-            <p class="text-label">DIRECTOR SPOTLIGHT</p>
-            <h2>변경빈 대표원장</h2>
-            <p class="muted">Director &amp; Head Coach</p>
-            <div style="margin-top: var(--space-8); display: grid; gap: var(--space-4)">
-              <p style="padding-bottom: var(--space-3); border-bottom: 1px solid var(--border-subtle)">VEX Korea Champion 팀 지도</p>
-              <p style="padding-bottom: var(--space-3); border-bottom: 1px solid var(--border-subtle)">World Championship 멘토링 운영</p>
-              <p style="padding-bottom: var(--space-3); border-bottom: 1px solid var(--border-subtle)">프로젝트 기반 교육 커리큘럼 설계</p>
-              <p style="padding-bottom: var(--space-3); border-bottom: 1px solid var(--border-subtle)">입시 연계 포트폴리오 전략 코칭</p>
-            </div>
-            <p class="quote" style="margin-top: var(--space-8)">"결과를 만들어내는 교육은, 과정의 설계에서 시작됩니다."</p>
-            <a class="inline-link" style="margin-top: var(--space-6)" href="./instructor.html">강사 소개 보기</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt">
-        <div class="container two-col">
-          <div class="fade-in">
-            <p class="text-label">ADMISSIONS / OUTCOMES</p>
-            <h2>
-              활동을 결과로,<br />
-              경험을 <em class="text-display text-accent">입시</em>로
-            </h2>
-          </div>
-          <div class="program-grid fade-in" style="grid-template-columns: 1fr">
-            <article class="pillar">
-              <h3>포트폴리오 구축</h3>
-              <p>프로젝트 산출물과 기술 문서를 정리해 평가 가능한 포트폴리오로 연결합니다.</p>
-            </article>
-            <article class="pillar">
-              <h3>활동 기록</h3>
-              <p>문제 정의, 실험, 개선 과정을 체계적으로 기록해 학습 서사를 만듭니다.</p>
-            </article>
-            <article class="pillar">
-              <h3>결과물 기반 설명 역량</h3>
-              <p>결과를 논리적으로 설명하는 능력을 강화해 면접/자기소개서 확장성을 확보합니다.</p>
-            </article>
-            <p class="muted">국제학교/일반학교 진학 환경 모두에 확장 가능한 결과 중심 학습 구조를 제공합니다.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section cta-band">
-        <div class="container two-col">
-          <div class="fade-in">
-            <p class="text-label">CONTACT CTA</p>
-            <h2>지금, 결과 중심 학습 설계를 시작하세요.</h2>
-            <p class="text-accent" style="font-size: var(--text-h3); margin-top: var(--space-6)">031-292-2697</p>
-            <a class="btn btn-primary" style="margin-top: var(--space-6)" href="./contact.html">상담 문의</a>
-          </div>
-          <div class="fade-in">
-            <p>금곡캠퍼스: 경기도 성남시 분당구 성남대로 165 천사의도시1 오피스텔 1차 202호</p>
-            <p style="margin-top: var(--space-4)">광교캠퍼스: 경기도 수원시 영통구 광교중앙로 145 광교엘포트몰 2층 41호</p>
+          <div class="home-welcome-actions">
+            <a class="btn btn-primary" href="./programs.html">프로그램 보기</a>
+            <a class="btn btn-secondary" href="./instructor.html">강사 소개</a>
           </div>
         </div>
       </section>
@@ -288,7 +135,48 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <p class="brand-main">MECHA CODING</p>
+            <a href="./index.html" class="footer-brand-link" aria-label="메카코딩학원 홈">
+              <img
+                class="footer-logo"
+                src="./images/logo/mecha-logo-wordmark.svg"
+                alt="MechaCoding Robotics Academy"
+                width="200"
+                height="48"
+                onerror="this.style.display='none'; document.getElementById('footer-text-logo').style.display='flex';"
+              />
+              <span id="footer-text-logo" class="footer-text-logo-fallback" style="display: none" aria-hidden="true">
+                <span class="brand-main">MECHA CODING</span>
+                <span class="brand-sub">ROBOTICS ACADEMY</span>
+              </span>
+            </a>
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/mecha_coding"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5" />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                  <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+                </svg>
+              </a>
+              <a
+                href="https://blog.naver.com/steamplus_suwon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Naver Blog"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.5" />
+                  <path
+                    d="M8 7.5h2.6l3.1 5.2V7.5H16v9h-2.5l-3.2-5.3V16.5H8v-9z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
             <p class="muted" style="margin-top: var(--space-2)">정밀하게 설계하고, 결과로 증명하는 로보틱스 교육.</p>
           </div>
           <div class="footer-links">
@@ -298,8 +186,8 @@
             <a href="./contact.html">Contact</a>
           </div>
           <div>
-            <p>금곡캠퍼스: 경기도 성남시 분당구 성남대로 165 천사의도시1 오피스텔 1차 202호</p>
-            <p style="margin-top: var(--space-3)">광교캠퍼스: 경기도 수원시 영통구 광교중앙로 145 광교엘포트몰 2층 41호</p>
+            <p>금곡캠퍼스: 경기도 수원시 권선구 금곡로196번길 61 에스지프라자 3F</p>
+            <p style="margin-top: var(--space-3)">광교캠퍼스: 경기도 수원시 영통구 에듀타운로 84 세븐스퀘어 3F</p>
             <p style="margin-top: var(--space-3)">대표번호: 031-292-2697</p>
           </div>
         </div>
