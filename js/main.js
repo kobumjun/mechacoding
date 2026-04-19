@@ -63,7 +63,7 @@ if (heroCarousel) {
   const dots = heroCarousel.querySelectorAll(".hero-carousel-dot");
   let current = 0;
   let timerId = 0;
-  const intervalMs = 5000;
+  const intervalMs = 3000;
 
   const src01 = "./images/hero/hero-slide-01.jpg";
   const srcMain = "./images/hero/hero-main.jpg";
@@ -119,6 +119,16 @@ if (heroCarousel) {
     } else if (slides.length > 0) {
       resetTimer();
     }
+  });
+}
+
+const programCardTiles = document.querySelectorAll("[data-program-card]");
+if (programCardTiles.length > 0) {
+  programCardTiles.forEach((card) => {
+    card.addEventListener("click", () => {
+      if (window.matchMedia("(min-width: 769px)").matches) return;
+      card.classList.toggle("is-open");
+    });
   });
 }
 

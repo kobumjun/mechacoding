@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/logo/favicon.png" />
+    <link rel="apple-touch-icon" href="images/logo/favicon.png" />
     <title>Programs | 메카코딩학원</title>
     <meta name="description" content="Foundation, Collaborative Project, Elite Competition, Software Advanced Track 상세 소개" />
     <meta property="og:title" content="Programs | 메카코딩학원" />
@@ -21,7 +23,7 @@
     <header class="site-header" data-site-header>
       <div class="container header-inner">
         <a href="./index.html" class="logo" aria-label="메카코딩학원 홈">
-          <img src="./images/logo/mecha-logo-wordmark.png" alt="MechaCoding Robotics Academy" class="logo-img" />
+          <img src="./images/logo/mecha-logo-clean.png" alt="MechaCoding Robotics Academy" class="logo-img" />
         </a>
         <div class="header-actions">
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
@@ -43,40 +45,77 @@
       </div>
     </header>
     <main class="site-main">
-      <section class="section">
-        <div class="container section-header fade-in">
-          <p class="text-label">PROGRAMS</p>
-          <h1>Programs</h1>
-          <p>로보틱스와 소프트웨어를 통합해 결과를 만들어내는 4개 트랙을 운영합니다.</p>
-        </div>
-      </section>
-      <section class="section section-alt">
-        <div class="container" style="display:grid; gap: var(--space-20)">
-          <article class="program-detail fade-in">
-            <div class="program-detail-copy">
-              <p class="program-number">01</p><h2>Foundation | 기초 설계 트랙</h2>
-              <p>로보틱스와 코딩의 핵심 개념을 정확히 이해하고 기초 체력을 구축하는 단계입니다.</p>
-              <ul style="margin-top: var(--space-6); display:grid; gap: var(--space-2)"><li>센서/모터 기초 제어</li><li>블록/텍스트 코딩 전환</li><li>기초 알고리즘 사고</li></ul>
-            </div>
-            <div class="program-detail-media image-frame image-4-5"><!-- 필요 이미지: program-foundation.jpg, 권장 비율 4:5, 설명: Foundation 상세 이미지 --><img src="./images/programs/program-foundation.jpg" alt="Foundation 프로그램 활동" loading="lazy" /></div>
-          </article>
-          <article class="program-detail fade-in">
-            <div class="program-detail-copy"><p class="program-number">02</p><h2>Collaborative Project | 협업 프로젝트 트랙</h2><p>팀 기반 프로젝트로 역할 분담과 통합 개발 과정을 경험합니다.</p><ul style="margin-top: var(--space-6); display:grid; gap: var(--space-2)"><li>팀 빌드 및 역할 설계</li><li>협업 툴 기반 산출물 관리</li><li>발표/데모 역량 강화</li></ul></div>
-            <div class="program-detail-media image-frame image-4-5"><!-- 필요 이미지: program-collaborative.jpg, 권장 비율 4:5, 설명: Collaborative 상세 이미지 --><img src="./images/programs/program-collaborative.jpg" alt="Collaborative Project 프로그램 활동" loading="lazy" /></div>
-          </article>
-          <article class="program-detail fade-in">
-            <div class="program-detail-copy"><p class="program-number">03</p><h2>Elite Competition | 대회 집중 트랙</h2><p>국내외 로보틱스 대회 출전을 목표로 전략과 완성도를 극대화합니다.</p><ul style="margin-top: var(--space-6); display:grid; gap: var(--space-2)"><li>대회 룰 분석 및 전략 수립</li><li>하드웨어/소프트웨어 최적화</li><li>현장 대응 시뮬레이션</li></ul></div>
-            <div class="program-detail-media image-frame image-4-5"><!-- 필요 이미지: program-elite.jpg, 권장 비율 4:5, 설명: Elite 상세 이미지 --><img src="./images/programs/program-elite.jpg" alt="Elite Competition 프로그램 활동" loading="lazy" /></div>
-          </article>
-          <article class="program-detail fade-in">
-            <div class="program-detail-copy"><p class="program-number">04</p><h2>Software Advanced Track | 심화 소프트웨어 트랙</h2><p>문제를 구조적으로 해석하고 확장 가능한 코드를 작성하는 고급 과정입니다.</p><ul style="margin-top: var(--space-6); display:grid; gap: var(--space-2)"><li>자료구조/알고리즘 적용</li><li>프로젝트 아키텍처 설계</li><li>코드 리뷰 및 리팩터링</li></ul></div>
-            <div class="program-detail-media image-frame image-4-5"><!-- 필요 이미지: program-software.jpg, 권장 비율 4:5, 설명: Software 상세 이미지 --><img src="./images/programs/program-software.jpg" alt="Software Advanced Track 프로그램 활동" loading="lazy" /></div>
-          </article>
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-hero-label">MECHACODING ACADEMY</p>
+          <h1 class="page-hero-title">Programs</h1>
+          <p class="page-hero-lead">로보틱스와 소프트웨어를 통합해 결과를 만들어내는 4개 트랙입니다.</p>
         </div>
       </section>
       <section class="section">
         <div class="container">
-          <div class="section-header fade-in"><p class="text-label">CORE METHOD</p><h2>핵심 교육 방식</h2></div>
+          <div class="program-card-grid fade-in">
+            <article class="program-card-tile" data-program-card>
+              <div class="program-card-tile-media">
+                <img src="./images/programs/program-foundation.jpg" alt="" loading="lazy" />
+                <div class="program-card-tile-overlay">
+                  <p>로보틱스와 코딩의 핵심 개념을 정확히 이해하고 기초 체력을 구축하는 단계입니다.</p>
+                </div>
+              </div>
+              <div class="program-card-tile-body">
+                <span class="program-card-tile-tag">기초 프로그램</span>
+                <h2 class="program-card-tile-title">Foundation Program</h2>
+                <p class="program-card-tile-summary">로보틱스 및 소프트웨어의 기초 설계 트랙</p>
+              </div>
+            </article>
+            <article class="program-card-tile" data-program-card>
+              <div class="program-card-tile-media">
+                <img src="./images/programs/program-collaborative.jpg" alt="" loading="lazy" />
+                <div class="program-card-tile-overlay">
+                  <p>팀 단위 프로젝트를 통해 역할 분담과 협업을 기반으로 한 문제 해결 과정을 학습합니다.</p>
+                </div>
+              </div>
+              <div class="program-card-tile-body">
+                <span class="program-card-tile-tag">협업 프로젝트</span>
+                <h2 class="program-card-tile-title">Collaborative Project</h2>
+                <p class="program-card-tile-summary">팀 단위 문제 해결 과정 학습</p>
+              </div>
+            </article>
+            <article class="program-card-tile" data-program-card>
+              <div class="program-card-tile-media">
+                <img src="./images/programs/program-elite.jpg" alt="" loading="lazy" />
+                <div class="program-card-tile-overlay">
+                  <p>국제 대회 기준에 맞춘 설계 및 전략 수립을 바탕으로, 로보틱스 제어와 소프트웨어 최적화 역량을 강화합니다.</p>
+                </div>
+              </div>
+              <div class="program-card-tile-body">
+                <span class="program-card-tile-tag">대회 준비</span>
+                <h2 class="program-card-tile-title">Elite Competition</h2>
+                <p class="program-card-tile-summary">국제 대회 기준 설계 및 전략 수립</p>
+              </div>
+            </article>
+            <article class="program-card-tile" data-program-card>
+              <div class="program-card-tile-media">
+                <img src="./images/programs/program-software.jpg" alt="" loading="lazy" />
+                <div class="program-card-tile-overlay">
+                  <p>알고리즘, 자료구조, 논리 기반 코딩을 중심으로 문제 해결형 소프트웨어 프로젝트를 수행합니다.</p>
+                </div>
+              </div>
+              <div class="program-card-tile-body">
+                <span class="program-card-tile-tag">CS 이론</span>
+                <h2 class="program-card-tile-title">Software Advanced Track</h2>
+                <p class="program-card-tile-summary">알고리즘·자료구조 기반 프로젝트</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section programs-method-section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <p class="text-label">CORE METHOD</p>
+            <h2>핵심 교육 방식</h2>
+          </div>
           <div class="icon-points fade-in">
             <article class="icon-point"><h3>Precision Coaching</h3><p>개별 학습 데이터를 기반으로 맞춤 피드백을 제공합니다.</p></article>
             <article class="icon-point"><h3>Iterative Projects</h3><p>반복 개선 구조로 결과물의 완성도를 단계적으로 끌어올립니다.</p></article>
@@ -89,19 +128,9 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <a href="./index.html" class="footer-brand-link" aria-label="메카코딩학원 홈">
-              <img
-                class="footer-logo"
-                src="./images/logo/mecha-logo-wordmark.svg"
-                alt="MechaCoding Robotics Academy"
-                width="200"
-                height="48"
-                onerror="this.style.display='none'; document.getElementById('footer-text-logo').style.display='flex';"
-              />
-              <span id="footer-text-logo" class="footer-text-logo-fallback" style="display: none" aria-hidden="true">
-                <span class="brand-main">MECHA CODING</span>
-                <span class="brand-sub">ROBOTICS ACADEMY</span>
-              </span>
+            <!-- 푸터 로고 -->
+            <a href="./index.html" class="footer-logo" aria-label="메카코딩학원 홈">
+              <img src="./images/logo/mecha-logo-clean.png" alt="MechaCoding Robotics Academy" class="footer-logo-img" />
             </a>
             <div class="footer-social">
               <a
